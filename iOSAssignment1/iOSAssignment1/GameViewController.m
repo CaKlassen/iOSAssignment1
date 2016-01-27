@@ -350,8 +350,8 @@ GLfloat gCubeVertexData[216] =
 	GLKMatrix4 baseModelViewMatrix;
 	baseModelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -4.0f);
 	baseModelViewMatrix = GLKMatrix4Translate(baseModelViewMatrix, _transX, _transY, 0);
-	baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, _rotationY, 0.0f, 1.0f, 0.0f);
 	baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, _rotationX, 1.0f, 0.0f, 0.0f);
+	baseModelViewMatrix = GLKMatrix4Rotate(baseModelViewMatrix, _rotationY, 0.0f, 1.0f, 0.0f);
 	baseModelViewMatrix = GLKMatrix4Scale(baseModelViewMatrix, _zoom, _zoom, _zoom);
 	
     self.effect.transform.modelviewMatrix = baseModelViewMatrix;
