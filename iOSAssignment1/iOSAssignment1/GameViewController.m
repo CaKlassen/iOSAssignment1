@@ -104,6 +104,7 @@ GLfloat gCubeVertexData[216] =
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *toggleLabel;
+- (IBAction)incButton:(id)sender;
 
 @property (strong) ObjValueClass *objClass;
 
@@ -286,9 +287,6 @@ GLfloat gCubeVertexData[216] =
 - (IBAction)toggleButton:(id)sender
 {
 	useObjC = !useObjC;
-	
-	[self.objClass incValue:useObjC];
-	
 	self.toggleLabel.text = [NSString stringWithFormat:@"%d", [self.objClass getValue:useObjC]];
 }
 
@@ -533,4 +531,10 @@ GLfloat gCubeVertexData[216] =
     return YES;
 }
 
+- (IBAction)incButton:(id)sender {
+	
+	[self.objClass incValue:useObjC];
+	
+	self.toggleLabel.text = [NSString stringWithFormat:@"%d", [self.objClass getValue:useObjC]];
+}
 @end

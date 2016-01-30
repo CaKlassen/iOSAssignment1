@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evv-v9-jFB">
-                                        <rect key="frame" x="8" y="12" width="91" height="30"/>
+                                        <rect key="frame" x="8" y="12" width="53" height="30"/>
                                         <state key="normal" title="Toggle"/>
                                         <connections>
                                             <action selector="toggleButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="kig-Ed-Sgj"/>
@@ -52,6 +52,13 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-jW-2u7">
+                                        <rect key="frame" x="78" y="12" width="82" height="30"/>
+                                        <state key="normal" title="Increment"/>
+                                        <connections>
+                                            <action selector="incButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LWn-8T-CVO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
